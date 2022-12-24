@@ -1,6 +1,6 @@
 from functools import reduce
 
-import tphon
+from . import tphon
 
 
 def show():

@@ -3,13 +3,16 @@ requires = ["maturin>=0.14,<0.15"]
 build-backend = "maturin"
 
 [project]
-name = "tphon"
+name = "atuin"
 requires-python = ">=3.7"
 classifiers = [
   "Programming Language :: Rust",
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
+
+[tool.maturin]
+manifest-path = "rust/tphon/Cargo.toml"
 
 [tool.poetry]
 name = "atuin"
@@ -18,7 +21,7 @@ description = ""
 authors = ["Alessandro Candido <candido.ale@gmail.com>"]
 readme = "README.md"
 packages = [
-  { include = "tubul", from = "src" },
+  { include = "atuin", from = "src" },
   { include = "jerakeen", from = "src" },
 ]
 

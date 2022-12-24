@@ -8,6 +8,9 @@ edition = "2021"
 name = "tphon"
 crate-type = ["cdylib"]
 
+[package.metadata.maturin]
+name = "atuin.tphon"
+
 [dependencies]
 pyo3 = { version = "0.17.3", features = ["extension-module"] }
 berilia = { path = "../berilia", version = "0.1.0" }

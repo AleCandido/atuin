@@ -1,8 +1,8 @@
-import tubul
+import atuin
 
 
 MY = "ciao.come.va"
 
 
 def show_tubul():
-    return tubul.show()
+    return atuin.show()
