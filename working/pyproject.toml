@@ -18,8 +18,8 @@ description = ""
 authors = ["Alessandro Candido <candido.ale@gmail.com>"]
 readme = "README.md"
 packages = [
+  { include = "atuin", from = "src" },
   { include = "tubul", from = "src" },
-  { include = "jerakeen", from = "src" },
 ]
 
 [tool.poetry.dependencies]
