@@ -1,12 +1,15 @@
 [package]
-name = "atuin"
+name = "_atuin"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
-name = "atuin"
+name = "_atuin"
 crate-type = ["cdylib"]
+
+[package.metadata.maturin]
+name = "atuin._atuin"
 
 [dependencies]
 pyo3 = { version = "0.17.3", features = ["extension-module"] }

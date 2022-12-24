@@ -17,6 +17,20 @@ version = "0.0.0"
 description = ""
 authors = ["Alessandro Candido <candido.ale@gmail.com>"]
 readme = "README.md"
+packages = [
+  { include = "tubul", from = "src" },
+  { include = "jerakeen", from = "src" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pdbpp = "^0.10.3"
+ipython = "^8.0"
+maturin = "^0.14.7"
+
+[tool.poe.tasks]
+dev = "maturin develop"
+build = "maturin build"
+ipy = "ipython"
