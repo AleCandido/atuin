@@ -3,13 +3,17 @@ requires = ["maturin>=0.14,<0.15"]
 build-backend = "maturin"
 
 [project]
-name = "tphon"
+name = "atuin"
 requires-python = ">=3.7"
 classifiers = [
   "Programming Language :: Rust",
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
+
+[tool.maturin]
+manifest-path = "rust/tphon/Cargo.toml"
+python-packages = ["tubul", "jerakeen"]
 
 [tool.poetry]
 name = "atuin"
@@ -28,7 +32,7 @@ python = "^3.10"
 [tool.poetry.group.dev.dependencies]
 pdbpp = "^0.10.3"
 ipython = "^8.0"
-maturin = "^0.14.7"
+maturin = "^0.14.8b1"
 
 [tool.poe.tasks]
 dev = "maturin develop"
