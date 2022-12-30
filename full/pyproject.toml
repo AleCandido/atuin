@@ -13,7 +13,7 @@ classifiers = [
 
 [tool.maturin]
 manifest-path = "rust/tphon/Cargo.toml"
-python-packages = ["src/tubul/__init__.py", "src/jerakeen/__init__.py"]
+python-packages = ["tubul", "jerakeen"]
 
 [tool.poetry]
 name = "atuin"
